@@ -1,4 +1,5 @@
 FROM alpine:3.5
+MAINTAINER Michael Munson <michael.d.munson@gmail.com>
 RUN apk add --no-cache git build-base bison automake autoconf bash
 COPY Makefile.in /tmp/
 COPY options.h /tmp/
