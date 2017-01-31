@@ -18,6 +18,6 @@ fi
 cd /database
 if [ -f "/database/${DATABASE_NAME}.new" ];
    gzip "${DATABASE_NAME}"
-   mv ${DATABASE_NAME}.new ${DATABASE_NAME}
+   mv "${DATABASE_NAME}.new" "${DATABASE_NAME}"
 fi   
-/src/stunt/moo ${DATABASE_NAME} ${DATABASE_NAME}.new 7777
+/src/stunt/moo "${DATABASE_NAME}" "${DATABASE_NAME}.new" 7777
