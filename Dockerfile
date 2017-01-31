@@ -15,4 +15,5 @@ RUN mkdir /src && \
     sh configure && \
     make
 VOLUME ["/database"]
+EXPOSE 7777
 ENTRYPOINT ["/moo.sh"]
